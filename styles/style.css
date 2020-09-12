@@ -1,0 +1,62 @@
+/********************
+REUSABLE & COMMONCODE
+********************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    user-select: none;
+    outline: none;
+    overflow-x: hidden;
+    width: 100vw;
+    font-family: 'Amiri', serif;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+:root {
+    --blue: #00c3f7;
+    --pink: #f41971;
+    --white: #ffffff;
+    --orange: #ffb94a;
+    --dark-orange : #ff9f06;
+}
+
+.home,
+.about-me {
+    height: 100vh;
+}
+
+nav{
+    height: 76px;
+    width: 100%;
+    display: flex;
+}
+
+main{
+    width: 94%;
+    margin: 0 auto;
+}
+
+.alphabet-container{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    grid-auto-rows: 100px;
+    list-style-type: none;
+}
+
+.alphabet{
+    width: 100%;
+    font-size: 2.6rem;
+    text-align: center;
+    background-color: var(--orange);
+    border: solid 5px var(--dark-orange);
+    border-radius: 10%;
+    display:table-cell;
+    vertical-align:middle;  
+}
