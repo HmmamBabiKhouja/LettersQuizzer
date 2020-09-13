@@ -22,7 +22,7 @@ body {
     --blue: #00c3f7;
     --pink: #f41971;
     --white: #ffffff;
-    --orange: #ffb94a;
+    --orange:#ffa517;
     --dark-orange : #ff9f06;
 }
 
@@ -52,11 +52,27 @@ main{
 
 .alphabet{
     width: 100%;
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     text-align: center;
     background-color: var(--orange);
     border: solid 5px var(--dark-orange);
     border-radius: 10%;
-    display:table-cell;
-    vertical-align:middle;  
+    position: relative;
+}
+
+.alpha-span{
+    display: block;
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 17%;
+    left:25%;
+}
+
+.alpha-high{
+    top:25%;
+}
+
+.alpha-down{
+    top:1%;
 }
