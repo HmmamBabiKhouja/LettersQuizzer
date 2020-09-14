@@ -1,0 +1,24 @@
+@media only screen and (min-width:768px) {
+    .alphabet-container {
+        grid-gap: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-auto-rows: 100px;
+    }
+    
+    .alpha-high{
+        top:25%;
+    }
+    
+    .alpha-span{
+        top: 17%;
+    }
+
+    .alpha-down{
+        top:1%;
+    }
+
+    .alphabet{
+        font-size: 2.4rem;
+    }
+    
+}
