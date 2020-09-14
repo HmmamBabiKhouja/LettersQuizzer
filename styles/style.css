@@ -19,11 +19,11 @@ body {
 }
 
 :root {
-    --blue: #00c3f7;
+    --blue: #5faee3;
     --pink: #f41971;
     --white: #ffffff;
-    --orange:#ffa517;
-    --dark-orange : #ff9f06;
+    --orange:#f39c12;
+    --dark-orange : #d35400;
 }
 
 .home,
@@ -58,6 +58,7 @@ main{
     border: solid 5px var(--dark-orange);
     border-radius: 10%;
     position: relative;
+    cursor: pointer;
 }
 
 .alpha-span{
