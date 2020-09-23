@@ -1,24 +1,72 @@
 @media only screen and (min-width:768px) {
     .alphabet-container {
-        grid-gap: 10px;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        grid-auto-rows: 100px;
+        grid-gap: 20px;
+    }
+    
+    nav{
+        height: 17vh;
+    }
+    
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .main-div{
+        transform: translateY(-50px);
+    }    
+    
+    .person-image{
+        width: 65%; 
+        position: relative;
+        text-align: center;
+        display: block;
+        text-align: center;
+    } 
+
+    .person-image>img{
+        width: 68%;
+    }
+
+    .main-menu{
+        margin-right:0;
+        width: 35%;
+        transform: none;
+    }
+
+    .menu-choice{
+        border-radius: 50px;
+        width: 56%;
+    }
+    
+    .alphabet-container{
+        grid-template-columns: repeat(auto-fit,minmax(110px,1fr));
+        grid-auto-rows: 110px;
     }
     
     .alpha-high{
-        top:25%;
+        top:15%;
     }
     
     .alpha-span{
-        top: 17%;
+        top: -5%;
     }
 
     .alpha-down{
-        top:1%;
+        top:-20%;
     }
 
     .alphabet{
-        font-size: 2.4rem;
+        font-size: 4rem;
+        box-shadow: 0 10px var(--dark-orange);
     }
-    
+ 
+    .btn-clicked{
+        box-shadow: none;
+    }
 }
+
+/*TODO:
+ THE ALPHABETS TABLE ON THE BIG SCREENS IS SUCKS 
+REARRANGE IT */
