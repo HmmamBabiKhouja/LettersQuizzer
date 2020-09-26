@@ -23,8 +23,7 @@ body {
 }
 
 :root {
-    /* --blue: #5faee3; */
-    --blue: #ffffff;
+    --blue: #5faee3;
     --pink: #f41971;
     --white: #ffffff;
     --orange:#f39c12;
@@ -32,19 +31,13 @@ body {
 }
 
 .container{
-    width: 95%;
-    max-width: 768px;
+    width: 96%;
     margin: 0 auto;
 }
 
 /********************
 ******* HOME *********
 ********************/
-
-.home,
-.about-me {
-    height: 100vh;
-}
 
 nav{
     height: 12vh;
@@ -57,29 +50,6 @@ main{
     height: 80vh;
 }
 
-.main-div{
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-}
-
-.main-menu{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;    
-    align-items: center;
-    gap: 15px;
-    list-style-type: none;
-    transform: translateY(-100px);/* this might change if I added more items on the main menu */
-    margin: 0 auto;
-}
-
-.person-image{
-    display: none;
-}
-
 .alphabet-container{
     display: grid;
     grid-gap: 12px 6px;
@@ -89,8 +59,6 @@ main{
     height: 80vh;
 }
 
-.menu-choice,
-.alpha-item,
 .alphabet{
     margin: 0 auto;
     text-align: center;
@@ -101,27 +69,10 @@ main{
     /* to remove the blue ugly shade when pressing the button */
     -webkit-tap-highlight-color: transparent;
     font-size: 2rem;
-}
-
-.menu-choice{
-    border-radius: 50px;
-    width: 100%;
-    padding:4px 24px;
-}
-
-.alphabet{
     border-radius: 12px;
     width: 100%;
     transition: 0.375s ease;
     position: relative;
-}
-
-.menu-choice-link:visited,
-.menu-choice-link:active,
-.menu-choice-link{
-    text-decoration: none;
-    color: var(--white);
-    width: 50%;
 }
 
 .btn-clicked{
@@ -146,65 +97,3 @@ main{
 .alpha-down{
     top:-12%;
 }
-
-/*******************
-* CHOOSE THE RIGHT *
-********************/
-
-.items-menu-div{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 65vh;
-    margin-bottom:auto;
-}
-
-.bird-image{
-    width: 75%; 
-    position: relative;
-    text-align: center;
-    display: block;
-    text-align: center;
-    margin: 0 0 5rem 0;
-} 
-
-.bird-image>img{
-    width: 100%;
-}
-
-.items-menu{
-    display: flex;
-    justify-content: space-evenly;
-    list-style-type: none;
-    width: 90%;
-}
-
-.alpha-item{
-    border-radius: 12px;
-    width: 23%;
-    transition: 0.375s ease;
-    position: relative;
-}
-
-.score-container{
-    height: 30px;
-    line-height: 30px;
-    margin-right:0.5rem ;
-}
-
-.score-container{
-    margin-top: 0.4rem ;
-}
-
-.level-label,
-.score{
-    font-size: 1.2rem;
-    text-align: center;
-    color: teal;
-}
-
-/* .main-container{
-    display: flex;
-    align-items: center;
-} */
