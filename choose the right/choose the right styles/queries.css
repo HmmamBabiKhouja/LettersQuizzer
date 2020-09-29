@@ -17,14 +17,6 @@
         height: 80vh;
     }
 
-    .bird-image{
-        width: 100%; 
-        margin: 1rem 0 2rem 0;
-    } 
-    
-    .bird-image>img{
-        width: 60%;
-    }
 
     .items-menu{
         width: 80%;

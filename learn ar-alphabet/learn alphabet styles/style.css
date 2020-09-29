@@ -76,7 +76,7 @@ main{
 }
 
 .btn-clicked{
-    box-shadow: none;
+    box-shadow: 0 6px transparent;
     transform: translateY(6px);
     transition: 0.375s ease;
 }

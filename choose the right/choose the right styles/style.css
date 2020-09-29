@@ -36,9 +36,11 @@ body {
     margin: 0 auto;
 }
 
-/********************
-******* CHOOSE THE RIGHT *********
-********************/
+/*********************
+** CHOOSE THE RIGHT **
+*********************/
+
+/**** NAV *****/
 
 nav{
     height: 12vh;
@@ -46,15 +48,28 @@ nav{
     display: flex;
 }
 
+.score-container{
+    height: 30px;
+    line-height: 30px;
+    margin-right:0.5rem ;
+}
+
+.score-container{
+    margin-top: 0.4rem ;
+}
+
+.level-label,
+.score{
+    font-size: 1.2rem;
+    text-align: center;
+    color: var(--white);
+}
+
+/*** MAIN ***/
+
 main{
     width: 100%;
     height: 80vh;
-}
-
-.btn-clicked{
-    box-shadow: none;
-    transform: translateY(6px);
-    transition: 0.375s ease;
 }
 
 .items-menu-div{
@@ -64,19 +79,6 @@ main{
     align-items: center;
     height: 65vh;
     margin-bottom:auto;
-}
-
-.bird-image{
-    width: 75%; 
-    position: relative;
-    text-align: center;
-    display: block;
-    text-align: center;
-    margin: 0 0 5rem 0;
-} 
-
-.bird-image>img{
-    width: 100%;
 }
 
 .items-menu{
@@ -102,19 +104,62 @@ main{
     font-size: 2rem;
 }
 
-.score-container{
-    height: 30px;
-    line-height: 30px;
-    margin-right:0.5rem ;
+.btn-clicked{
+    box-shadow: 0 6px transparent;
+    transform: translateY(6px);
+    transition: 0.375s ease;
 }
 
-.score-container{
-    margin-top: 0.4rem ;
+/**** IMAGES ****/
+
+.images{
+    display: flex;
+    width: 75%;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.level-label,
-.score{
-    font-size: 1.2rem;
+.bird-image{
+    width: 100%; 
+    position: relative;
     text-align: center;
-    color: var(--white);
+    display: block;
+    text-align: center;
+} 
+
+.bird-image>img{
+    width: 100%;
+}
+
+.play-image{
+    width: 75%; 
+    position: relative;
+    text-align: center;
+    display: block;
+    text-align: center;
+} 
+
+.play-image>svg{
+    width: 50%;
+    height: 10%;
+}
+
+/**** PLAY-BUTTON ****/
+
+.light-triangle,
+.dark-triangle{
+    transition: 0.4s ease;
+}
+
+.light-triangle-clicked,
+.dark-triangle-clicked{
+    transition: 0.4s ease;
+}
+
+.light-triangle-clicked{
+    transform:translateY(24px);
+}
+
+.dark-triangle-clicked{
+    display: none;
 }
