@@ -14,9 +14,6 @@ const alphabets = ["أ","ب","ت","ث","ج","ح","خ","د","ذ","ر","ز","س","
                     "ض","ط","ظ","ع","غ","ف","ق","ك","ل","م","ن","ه","و","ي"];
 let randomNum = 0;
 
-// const alphabets = ["A","B",'C','D','E','F','G','H','I','J','K','L','M',
-//                     'N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
-
 function init(){
     let choices= [];
     for ( let i =0;i<3;i++){
@@ -29,7 +26,8 @@ function init(){
         letterChoices[i].innerHTML=alphabets[temp];    
     }
 
-    randomNum = choices[Math.floor(Math.random()*choices.length)]; 
+    randomNum = choices[Math.floor(Math.random()*choices.length)];
+    playLetter();
 }
 
 function playLetter(){
@@ -58,8 +56,13 @@ function checkAnswer(answer){
         score=0;
     }
 
-    scoreDisplay.innerHTML=score;
+    let arabicScore=score.toString().EntoAr();
+    scoreDisplay.innerHTML=arabicScore;
     init();
 }
 
+//English to Arabic digits.
+String.prototype.EntoAr= function() {
+    return this.replace(/\d/g, d =>  '٠١٢٣٤٥٦٧٨٩'[d])
+  }
 init();
