@@ -56,13 +56,17 @@ function checkAnswer(answer){
         score=0;
     }
 
-    let arabicScore=score.toString().EntoAr();
+    let arabicScore=EntoAr(score.toString());
     scoreDisplay.innerHTML=arabicScore;
-    init();
+    setTimeout(()=>{
+        init();
+    },1200)
 }
 
 //English to Arabic digits.
-String.prototype.EntoAr= function() {
-    return this.replace(/\d/g, d =>  '٠١٢٣٤٥٦٧٨٩'[d])
-  }
+//TODO: add it to your snippets
+function enToAr(num) {
+    return num.replace(/\d/g, d =>  '٠١٢٣٤٥٦٧٨٩'[d])
+}
+
 init();
