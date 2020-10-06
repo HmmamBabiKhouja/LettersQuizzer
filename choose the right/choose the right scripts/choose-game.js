@@ -66,11 +66,10 @@ function checkAnswer(answer){
     setTimeout(()=>{
         init();
         scoreDisplay.innerHTML=arabicScore;
-    },1300)
+    },1350)
 }
 
 //English to Arabic digits.
-//TODO: add it to your snippets
 function enToAr(num) {
     return num.replace(/\d/g, d =>  '٠١٢٣٤٥٦٧٨٩'[d])
 }
