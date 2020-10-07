@@ -79,10 +79,10 @@ nav{
 }
 
 .menu-choice{
-    margin: 0 auto;
+    margin: 3px auto;
     text-align: center;
     background-color: var(--orange);
-    box-shadow: 0 6px var(--dark-orange);
+    box-shadow: 0 8px var(--dark-orange);
     position: relative;
     cursor: pointer;
     /* to remove the blue ugly shade when pressing the button */
@@ -91,18 +91,19 @@ nav{
     border-radius: 50px;
     width: 100%;
     padding:4px 24px;
+
 }
 
+.menu-choice:active{
+    box-shadow: 0 8px transparent;
+    transform: translateY(8px);
+    transition: 0.375s ease;
+}
+
+.menu-choice-link:link,
 .menu-choice-link:visited,
-.menu-choice-link:active,
-.menu-choice-link{
+.menu-choice-link:hover{
     text-decoration: none;
     color: var(--white);
     width: 50%;
-}
-
-.btn-clicked{
-    box-shadow: none;
-    transform: translateY(6px);
-    transition: 0.375s ease;
 }

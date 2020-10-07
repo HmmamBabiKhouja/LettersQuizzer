@@ -52,7 +52,7 @@ main{
     grid-auto-rows: auto;
     list-style-type: none;
     height: 80vh;
-    max-width: 768px;
+    max-width: 1200px;
 }
 
 .alphabet{
