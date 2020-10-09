@@ -51,18 +51,38 @@
     }
 
     .menu-choice{
-        border-radius: 50px;
         width: 90%;
     }
  
 }
 
 @media only screen and (min-width:1024px) {
-    html{
-        font-size: 20px;
-    }
 
     .container{
-        max-width: 1200px;
+        max-width: 1024px;
     }
+
+    .main-div{
+        transform: translateY(-15%);
+    }   
+
+
+    .main-menu{
+        width: 32%;
+        order: 1;
+        transform: translateY(25%);
+    }
+
+    .menu-choice{
+        width: 90%;
+    }
+ 
+    .bird-on-stairs-image{
+        width: 55%; 
+    } 
+
+    .bird-on-stairs-image>img{
+        width: 88%;
+    }
+
 }
