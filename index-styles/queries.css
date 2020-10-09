@@ -11,6 +11,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 90vh;
     }
 
     .container{
@@ -19,13 +20,13 @@
 
     .main-div{
         flex-direction: row;
-        width: 94%;
-        height: 90vh;
-        transform: translateY(-6%);
+        justify-content: space-between;
+        width: 96%;
+        transform: translateY(-50%);
     }    
     
     .bird-on-stairs-image{
-        width: 50%; 
+        width: 55%; 
         text-align: center;
         order: 1;
     } 
@@ -36,24 +37,43 @@
 
     .main-menu{
         margin-right:0;
-        width: 30%;
-        transform: none;
+        width: 45%;
+        transform: translateY(25%);
         order: 0;
     }
 
     .menu-choice{
-        border-radius: 50px;
-        width: 80%;
+        width: 90%;
     }
  
 }
 
 @media only screen and (min-width:1024px) {
-    html{
-        font-size: 20px;
-    }
 
     .container{
-        max-width: 1200px;
+        max-width: 1024px;
+    }
+
+    .main-div{
+        transform: translateY(-15%);
+    }   
+
+
+    .main-menu{
+        width: 32%;
+        order: 1;
+        transform: translateY(25%);
+    }
+
+    .menu-choice{
+        width: 90%;
+    }
+ 
+    .bird-on-stairs-image{
+        width: 55%; 
+    } 
+
+    .bird-on-stairs-image>img{
+        width: 88%;
     }
 }
