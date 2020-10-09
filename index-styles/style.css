@@ -23,7 +23,8 @@ body {
 }
 
 :root {
-    --blue: #5faee3;
+    /* --blue: #5faee3; */
+    --blue: #ffffff;
     --pink: #f41971;
     --white: #ffffff;
     --orange:#f39c12;
@@ -45,15 +46,19 @@ nav{
     display: flex;
 }
 
+main{
+    height: 70vh;
+}
+
 .main-div{
     width: 100%;
-    height: 70vh;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    transform: translateY(-5%);/* this might be edited or removed if I added nav tag */
+    gap : 2.2rem;
+    transform: translateY(16%);/* this might be edited or removed if I added nav tag */
 }
 
 .bird-on-stairs-image{
@@ -67,7 +72,8 @@ nav{
 }
 
 .main-menu{
-    width: 60%;
+    order: 1;
+    width: 75%;
     display: flex;
     flex-direction: column;
     justify-content: center;    
@@ -75,11 +81,10 @@ nav{
     gap: 15px;
     list-style-type: none;
     margin: 0 auto;
-    order: 1;
 }
 
 .menu-choice{
-    margin: 3px auto;
+    margin: 3px 0 3px auto;
     text-align: center;
     background-color: var(--orange);
     box-shadow: 0 8px var(--dark-orange);
@@ -91,7 +96,7 @@ nav{
     font-weight: 700;
     border-radius: 50px;
     width: 100%;
-    padding:5px 20px;
+    padding:1rem;
     word-spacing:2px;
 }
 

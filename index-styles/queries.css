@@ -7,10 +7,17 @@
         height: 10vh;
     }
     
+
+    /* TODO: TO AR-VERSION: edit the main-div to be a container for its content 
+        and make the main lift the height borders
+        2 container doesn't apply the margin 0 auto for centering elements*/
+        
+
     main{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 90vh;
     }
 
     .container{
@@ -19,31 +26,33 @@
 
     .main-div{
         flex-direction: row;
-        width: 94%;
-        height: 90vh;
-        transform: translateY(-6%);
+        justify-content: space-between;
+        width: 96%;
+        transform: translateY(-50%);
     }    
     
     .bird-on-stairs-image{
-        width: 50%; 
+        width: 55%; 
         text-align: center;
-        order: 1;
+        order: 0;
     } 
 
     .bird-on-stairs-image>img{
         width: 100%;
     }
 
+    /* TODO: take these two classes below to arabic ver */
+
     .main-menu{
         margin-right:0;
-        width: 30%;
-        transform: none;
-        order: 0;
+        width: 45%;
+        order: 1;
+        transform: translateY(25%);
     }
 
     .menu-choice{
         border-radius: 50px;
-        width: 80%;
+        width: 90%;
     }
  
 }
