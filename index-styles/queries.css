@@ -6,12 +6,6 @@
     nav{
         height: 10vh;
     }
-    
-
-    /* TODO: TO AR-VERSION: edit the main-div to be a container for its content 
-        and make the main lift the height borders
-        2 container doesn't apply the margin 0 auto for centering elements*/
-        
 
     main{
         display: flex;
@@ -40,8 +34,6 @@
     .bird-on-stairs-image>img{
         width: 100%;
     }
-
-    /* TODO: take these two classes below to arabic ver */
 
     .main-menu{
         margin-right:0;
