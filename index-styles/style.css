@@ -39,11 +39,31 @@ body {
 ******* HOME *********
 ********************/
 
+/****** NAV ******/
+
 nav{
     height: 12vh;
     width: 100%;
     display: flex;
 }
+
+.alter-language-div{
+    margin:0.8rem 1.5rem;
+}
+
+.alter-language{
+    font-family: 'Roboto', sans-serif;
+    color: var(--orange);
+    text-shadow: 0 5px var(--dark-orange);
+    font-size: 2.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    /* to remove the blue ugly shade when pressing the button */
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+}
+
+/****** CENTER ******/
 
 .main-div{
     width: 100%;
@@ -91,13 +111,6 @@ nav{
     border-radius: 50px;
     width: 100%;
     padding:4px 24px;
-
-}
-
-.menu-choice:active{
-    box-shadow: 0 8px transparent;
-    transform: translateY(8px);
-    transition: 0.375s ease;
 }
 
 .menu-choice-link:link,
@@ -105,5 +118,11 @@ nav{
 .menu-choice-link:hover{
     text-decoration: none;
     color: var(--white);
-    width: 50%;
+    width: 100%;
+}
+
+.menu-choice:active{
+    box-shadow: 0 8px transparent;
+    transform: translateY(8px);
+    transition: 0.375s ease;
 }
