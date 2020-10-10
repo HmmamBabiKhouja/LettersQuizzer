@@ -36,7 +36,7 @@ function init(){
 }
 
 function playLetter(){
-    let path = `../../resources/AR-alphabets-sounds/${randomNum}.mp3`;
+    let path = `../../resources/EN-alphabets-sounds/${randomNum}.mp3`;
     audioPlayer.src=path;
     audioPlayer.play();
     darkPlayTriangle.classList.add("dark-triangle-clicked");
