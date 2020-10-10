@@ -17,7 +17,7 @@ body {
     outline: none;
     overflow-x: hidden;
     width: 100vw;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: var(--blue);
     color: var(--white);
 }
@@ -43,6 +43,22 @@ nav{
     height: 12vh;
     width: 100%;
     display: flex;
+}
+
+.alter-language-div{
+    margin:0.8rem 1.5rem;
+}
+
+.alter-language{
+    font-family: 'Amiri', serif;
+    color: var(--orange);
+    text-shadow: 0 5px var(--dark-orange);
+    font-size: 2.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    /* to remove the blue ugly shade when pressing the button */
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
 }
 
 main{
