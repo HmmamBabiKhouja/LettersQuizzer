@@ -13,8 +13,10 @@ const wonRound= new Audio("../../resources/effect-sounds/won.mp3");
 const lostRound= new Audio("../../resources/effect-sounds/lost.mp3");
 // PRIMITIVE VARIABLES
 let score = 0;
-const alphabets = ["أ","ب","ت","ث","ج","ح","خ","د","ذ","ر","ز","س","ش","ص",
-                    "ض","ط","ظ","ع","غ","ف","ق","ك","ل","م","ن","ه","و","ي"];
+const alphabets = [
+    "A","B","C","D","E","F","G","H","I","J","K","L","M",
+    "N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+
 let randomNum = 0;
 
 function init(){
@@ -62,16 +64,9 @@ function checkAnswer(answer){
     }
     sound.play();
 
-    let arabicScore=enToAr(score.toString());
     setTimeout(()=>{
         init();
-        scoreDisplay.innerHTML=arabicScore;
+        scoreDisplay.innerHTML=score;
     },1350)
 }
-
-//English to Arabic digits.
-function enToAr(num) {
-    return num.replace(/\d/g, d =>  '٠١٢٣٤٥٦٧٨٩'[d])
-}
-
 init();
