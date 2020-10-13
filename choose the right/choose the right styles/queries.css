@@ -11,17 +11,10 @@
         height: 10vh;
     }
     
-    main{
+    .items-menu-div{
         display: flex;
         justify-content: center;
         align-items: center;
-    }
-
-    .play-image>svg{
-        width: 50%;
-    }
-
-    .items-menu-div{
         height: 80vh;
     }
 
@@ -30,46 +23,45 @@
     }
     
     .alpha-item{
-        width: 16%;
-        padding: 10px 0;
-        font-size: 2.6rem;
-        box-shadow: 0 12px var(--dark-orange);
+        width: 12%;
     }
     
-    .btn-clicked{
-        box-shadow: 0 10px transparent;
-        transform: translateY(10px);
+    .images{
+        width: 90%;
+        transform: translateX(-2.5%);
     }
+
+    .play-image>svg{
+        width: 40%;
+    }
+    
+    .bird-image>img{
+        width: 95%;
+    }
+    
 }
 
 @media only screen and (min-width:1024px) {
     .images{
-        width: 65%;
+        width: 72%;
         transform: translateX(-5%);
     }
 
-    .bird-image>image{
-        width: 75%;
+    .play-image>svg{
+        width: 35%;
     }
     
-    .play-image>svg{
-        width: 40%;
+    .bird-image>img{
+        width: 90%;
     }
-
     .items-menu{
         width: 80%;
     }
-    
+
     .alpha-item{
-        width: 11%;
-        padding: 8px 0;
-        font-size: 2.4rem;
-        box-shadow: 0 8px var(--dark-orange);
-    }
-    
-    .btn-clicked{
-        box-shadow: 0 8px transparent;
-        transform: translateY(8px);
+        width: 10%;
     }
 
+    
+    
 }
