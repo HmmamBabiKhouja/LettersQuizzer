@@ -22,7 +22,7 @@
         flex-direction: row;
         justify-content: space-between;
         width: 96%;
-        transform: translateY(-50%);
+        transform: translateY(-15%);
     }    
     
     .bird-on-stairs-image{
@@ -53,12 +53,7 @@
     .container{
         max-width: 1024px;
     }
-
-    .main-div{
-        transform: translateY(-15%);
-    }   
-
-
+    
     .main-menu{
         width: 32%;
         order: 1;

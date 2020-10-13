@@ -46,16 +46,18 @@ nav{
     height: 12vh;
     width: 100%;
     display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 1.3rem;
 }
 
 .score-container{
     height: 30px;
     line-height: 30px;
-    margin: 1.5rem ;
 }
 
 .score{
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     text-align: center;
     color: var(--white);
 }
@@ -89,6 +91,7 @@ main{
     margin: 0 auto;
     border-radius: 12px;
     width: 20%;
+    height: 66px;
     font-size: 2rem;
     padding: 5px 0;
     background-color: var(--orange);
@@ -113,6 +116,14 @@ main{
     justify-content: space-around;
     align-items: center;
     transform: translateX(-3%);
+}
+
+.play-image{
+    order: 0;
+}
+
+.bird-image{
+    order: 1;
 }
 
 .play-image,
