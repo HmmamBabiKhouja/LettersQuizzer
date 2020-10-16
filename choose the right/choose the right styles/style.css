@@ -8,21 +8,20 @@ REUSABLE & COMMON-CODE
     box-sizing: border-box;
 }
 
-html{
-    font-size: 16px;
-}
-
+html,
 body {
+    font-size: 16px;
     user-select: none;
     outline: none;
     overflow-x: hidden;
-    width: 100vw;
+    width: 100%;
     font-family: 'Amiri', serif;
     background-color: var(--blue);
     color: var(--white);
 }
 
 :root {
+    /* --blue: #ffffff;*/
     --blue: #5faee3;
     --pink: #f41971;
     --white: #ffffff;
@@ -33,6 +32,8 @@ body {
 .container{
     width: 96%;
     max-width: 1200px;
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
 }
 
@@ -75,6 +76,7 @@ main{
     justify-content: space-evenly;
     align-items: center;
     height: 65vh;
+    margin: 0 auto;
     margin-bottom:auto;
 }
 
