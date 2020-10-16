@@ -1,66 +1,68 @@
 @media only screen and (min-width:768px) {
-    html{
+    html {
         font-size: 17px;
     }
-    
+
     .alphabet-container {
         grid-gap: 20px;
     }
-    
-    nav{
+
+    nav {
         height: 10vh;
     }
-    
-    .items-menu-div{
+
+    .items-menu-div {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .items-menu{
+    .items-menu {
         width: 85%;
     }
-    
-    .alpha-item{
-        width: 12%;
+
+    .alpha-item {
+        width: 14%;
+        font-size: 2.2rem;
+        height: 76px;
+        line-height: 76px;
     }
-    
-    .images{
+
+    .images {
         width: 90%;
         transform: translateX(-2.5%);
     }
 
-    .play-image>svg{
+    .play-image>svg {
         width: 40%;
     }
-    
-    .bird-image>img{
+
+    .bird-image>img {
         width: 95%;
     }
-    
+
 }
 
 @media only screen and (min-width:1024px) {
-    .images{
+    .images {
         width: 72%;
         transform: translateX(-5%);
     }
 
-    .play-image>svg{
+    .play-image>svg {
         width: 35%;
     }
-    
-    .bird-image>img{
+
+    .bird-image>img {
         width: 90%;
     }
-    .items-menu{
+
+    .items-menu {
         width: 80%;
     }
 
-    .alpha-item{
-        width: 10%;
+    .alpha-item {
+        height: 80px;
+        line-height: 80px;
     }
-
-    
-    
 }
