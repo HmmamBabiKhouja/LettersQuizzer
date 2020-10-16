@@ -22,7 +22,8 @@ body {
 
 :root {
     --blue: #5faee3;
-    --pink: #f41971;
+    --pink: #f63985;
+    --dark-pink: #b0084c;
     --white: #ffffff;
     --orange:#f39c12;
     --dark-orange : #d35400;
@@ -43,23 +44,49 @@ body {
 /**** NAV *****/
 
 nav{
-    height: 12vh;
+    height: 8vh;
     width: 100%;
     display: flex;
-    justify-content: start;
-    align-items: center;
-    margin-left: 1.3rem;
 }
 
-.score-container{
-    height: 30px;
-    line-height: 30px;
+.nav-list {
+    display: flex;
+    margin-left: auto;
+    list-style-type: none;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.nav-list>li{
+    margin-right:0.8rem ;
+    text-align: center;
+}
+
+.nav-list>li:first-child{
+    margin-right: auto;
+    margin-left:0.8rem ;
 }
 
 .score{
     font-size: 1.3rem;
-    text-align: center;
+    line-height: 8vh;
+    margin: auto 0;
     color: var(--white);
+    display: inline-block;
+}
+
+.alter-language {
+    font-family: 'Amiri', serif;
+    color: var(--pink);
+    text-shadow: 0 3px var(--dark-pink);
+    font-size: 2.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.home-img {
+    width: 54px;
 }
 
 /*** MAIN ***/

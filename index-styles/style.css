@@ -22,6 +22,7 @@ body {
 :root {
     --blue: #5faee3;
     --pink: #f41971;
+    --dark-pink: #b0084c;
     --white: #ffffff;
     --orange:#f39c12;
     --dark-orange : #d35400;
@@ -49,8 +50,8 @@ nav{
 
 .alter-language{
     font-family: 'Amiri', serif;
-    color: var(--orange);
-    text-shadow: 0 5px var(--dark-orange);
+    color: var(--pink);
+    text-shadow: 0 3px var(--dark-pink);
     font-size: 2.5rem;
     font-weight: 700;
     cursor: pointer;
