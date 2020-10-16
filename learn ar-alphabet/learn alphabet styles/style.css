@@ -65,14 +65,16 @@ main{
     /* to remove the blue ugly shade when pressing the button */
     -webkit-tap-highlight-color: transparent;
     font-size: 2rem;
+    font-weight: 700;
     border-radius: 12px;
     width: 100%;
     transition: 0.375s ease;
     position: relative;
+
 }
 
 .btn-clicked{
-    box-shadow: 0 6px transparent;
+    box-shadow: none;
     transform: translateY(6px);
     transition: 0.375s ease;
 }
