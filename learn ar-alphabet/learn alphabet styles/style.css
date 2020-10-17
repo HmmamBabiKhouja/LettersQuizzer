@@ -22,6 +22,7 @@ body {
 :root {
     --blue: #5faee3;
     --pink: #f41971;
+    --dark-pink: #d00a5a;
     --white: #ffffff;
     --orange:#f39c12;
     --dark-orange : #d35400;
@@ -36,11 +37,47 @@ body {
 ******* HOME *********
 ********************/
 
+/*** NAV ***/
+
 nav{
-    height: 10vh;
+    height: 13vh;
     width: 100%;
     display: flex;
 }
+
+
+.nav-list {
+    display: flex;
+    margin-right: auto;
+    list-style-type: none;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.nav-list>li:first-child{
+    margin-right: auto;
+}
+
+.nav-list>li{
+    text-align: center;
+    margin-left: 0.8rem;
+}
+
+.alter-language {
+    font-family: 'Roboto', sans-serif;
+    color: var(--pink);
+    text-shadow: 0 3px var(--dark-pink);
+    font-size: 2.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.home-img {
+    width: 54px;
+}
+
+/*** CENTER ***/
 
 main{
     width: 100%;

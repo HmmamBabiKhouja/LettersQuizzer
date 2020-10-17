@@ -25,6 +25,7 @@ body {
 :root {
     --blue: #5faee3;
     --pink: #f41971;
+    --dark-pink: #d00a5a;
     --white: #ffffff;
     --orange:#f39c12;
     --dark-orange : #d35400;
@@ -47,15 +48,25 @@ nav{
     display: flex;
 }
 
-.alter-language-div{
-    margin:0.8rem 1.5rem;
+.nav-list {
+    display: flex;
+    margin-right: auto;
+    list-style-type: none;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.nav-list>li{
+    margin-left:0.8rem ;
+    margin-right: auto;
+    text-align: center;
 }
 
 .alter-language{
     font-family: 'Roboto', sans-serif;
-    color: var(--orange);
-    text-shadow: 0 5px var(--dark-orange);
-    font-size: 2.5rem;
+    color: var(--pink);
+    text-shadow: 0 3px var(--dark-pink);
+    font-size: 2.8rem;
     font-weight: 700;
     cursor: pointer;
     /* to remove the blue ugly shade when pressing the button */
