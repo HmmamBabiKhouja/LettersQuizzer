@@ -1,4 +1,15 @@
 @media only screen and (min-width:768px) {
+    nav{
+        height: 8vh;
+    }
+
+    .home-img{
+        width: 42px;
+    }
+
+    .alter-language{
+        font-size: 2.6rem;
+    }
 
     main{
         display: flex;

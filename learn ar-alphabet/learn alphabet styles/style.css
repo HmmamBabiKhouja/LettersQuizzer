@@ -40,7 +40,7 @@ body {
 /*** NAV ***/
 
 nav{
-    height: 10vh;
+    height: 6vh;
     width: 100%;
     display: flex;
 }
@@ -48,6 +48,7 @@ nav{
 
 .nav-list {
     display: flex;
+    align-items: center;
     margin-right: auto;
     list-style-type: none;
     margin-top: 0.5rem;
@@ -61,26 +62,28 @@ nav{
 .nav-list>li{
     text-align: center;
     margin-left: 0.8rem;
+    height: 100%;
 }
 
 .alter-language {
     font-family: 'Roboto', sans-serif;
     color: var(--pink);
-    text-shadow: 0 3px var(--dark-pink);
-    font-size: 2.8rem;
+    text-shadow: 0 2px var(--dark-pink);
+    font-size: 1.7rem;
     font-weight: 700;
     cursor: pointer;
     text-decoration: none;
 }
 
 .home-img {
-    width: 54px;
+    width: 30px;
 }
 
 /*** CENTER ***/
 
 main{
     width: 100%;
+
 }
 
 .alphabet-container{
