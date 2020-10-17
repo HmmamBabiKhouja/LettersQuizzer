@@ -42,13 +42,14 @@ body {
 /**** NAV ****/
 
 nav {
-    height: 8vh;
+    height: 7vh;
     width: 100%;
     display: flex;
 }
 
 .nav-list {
     display: flex;
+    align-items: center;
     margin-left: auto;
     list-style-type: none;
     margin-top: 0.5rem;
@@ -61,15 +62,17 @@ nav {
 .alter-language {
     font-family: 'Amiri', serif;
     color: var(--pink);
-    text-shadow: 0 3px var(--dark-pink);
-    font-size: 2.5rem;
+    text-shadow: 0 2px var(--dark-pink);
+    font-size: 1.4rem;
+    height: 100%;
     font-weight: 700;
     cursor: pointer;
     text-decoration: none;
 }
 
 .home-img {
-    width: 54px;
+    width: 30px;
+    height: 100%;
 }
 
 main {
