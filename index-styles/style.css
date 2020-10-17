@@ -22,7 +22,7 @@ body {
 :root {
     --blue: #5faee3;
     --pink: #f41971;
-    --dark-pink: #b0084c;
+    --dark-pink: #d00a5a;
     --white: #ffffff;
     --orange:#f39c12;
     --dark-orange : #d35400;
@@ -43,9 +43,15 @@ nav{
     display: flex;
 }
 
-.alter-language-div{
-    margin:0.8rem 1.5rem;
-    transform: translateY(-35%);
+.nav-list {
+    display: flex;
+    margin-left: auto;
+    list-style-type: none;
+    margin-top: 0.5rem;
+}
+
+.nav-list>li{
+    margin-right:0.8rem ;
 }
 
 .alter-language{
